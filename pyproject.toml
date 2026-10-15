@@ -1,0 +1,80 @@
+[build-system]
+requires = ["hatchling>=1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "grocery-delivery-availability"
+version = "0.1.0"
+description = "Responsible postcode-level UK grocery delivery availability collection"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+authors = [{ name = "Chenrui Xiao" }]
+keywords = [
+  "grocery",
+  "delivery",
+  "postcode",
+  "accessibility",
+  "responsible-data-collection",
+  "research-software",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Information Analysis",
+]
+dependencies = [
+  "lxml==6.1.3",
+  "playwright==1.63.0",
+  "requests==2.34.2",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest==9.1.1",
+  "ruff==0.16.9",
+]
+release = [
+  "build>=1.2,<2",
+]
+
+[project.scripts]
+grocery-delivery-availability = "grocery_delivery_availability.cli:main"
+
+[project.urls]
+Documentation = "https://github.com/sipothemaster/grocery-delivery-availability#readme"
+Repository = "https://github.com/sipothemaster/grocery-delivery-availability"
+Issues = "https://github.com/sipothemaster/grocery-delivery-availability/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/grocery_delivery_availability"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "/src",
+  "/tests",
+  "/docs",
+  "/examples",
+  "/scripts",
+  "/README.md",
+  "/LICENSE",
+  "/NOTICE",
+  "/AUTHORS.md",
+  "/CHANGELOG.md",
+  "/CITATION.cff",
+  "/PROVENANCE.md",
+]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]

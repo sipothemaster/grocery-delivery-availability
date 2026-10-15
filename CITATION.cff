@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+type: software
+message: "If you use this software, please cite the specific released version."
+title: "Grocery Delivery Availability"
+authors:
+  - family-names: "Xiao"
+    given-names: "Chenrui"
+version: "0.1.0"
+date-released: "2026-10-15"
+license: MIT
+repository-code: "https://github.com/sipothemaster/grocery-delivery-availability"
+abstract: >-
+  A reproducible command-line tool for measuring postcode-level grocery
+  delivery availability from UK retailer websites, with retailer-specific
+  evidence, explicit uncertainty, and documented responsible-collection
+  safeguards.
+keywords:
+  - grocery delivery
+  - postcode
+  - accessibility
+  - web data collection
+  - responsible data collection
+  - research software
+  - United Kingdom

@@ -4,6 +4,8 @@ All notable changes to this project will be documented here.
 
 ## [Unreleased]
 
+- Added the Zenodo version and concept DOIs issued for the initial release.
+
 ## [0.1.0] - 2026-10-15
 
 - Created an independent, package-based implementation for six UK grocery

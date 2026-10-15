@@ -29,5 +29,7 @@ def test_citation_metadata_respects_release_authorship() -> None:
     assert 'date-released: "2026-10-15"' in citation
     assert 'family-names: "Xiao"' in citation
     assert 'given-names: "Chenrui"' in citation
+    assert 'doi: "10.5281/zenodo.23400413"' in citation
+    assert 'value: "10.5281/zenodo.23400412"' in citation
     assert "email:" not in citation
     assert "orcid:" not in citation

@@ -163,10 +163,11 @@ can change without notice. The full governance record is maintained in
 ## Citation
 
 Citation metadata is provided in [`CITATION.cff`](CITATION.cff). Cite the exact
-released version used in an analysis. Until Zenodo assigns a DOI, cite version
-0.1.0 as: Chenrui Xiao (2026), *Grocery Delivery Availability*, version 0.1.0,
-University of Leeds, software. A DOI will be added after the first GitHub
-release is archived with Zenodo.
+released version used in an analysis. For version 0.1.0, cite: Chenrui Xiao
+(2026), *Grocery Delivery Availability* (v0.1.0), Zenodo,
+[https://doi.org/10.5281/zenodo.23400413](https://doi.org/10.5281/zenodo.23400413).
+The DOI representing all versions of the software is
+[10.5281/zenodo.23400412](https://doi.org/10.5281/zenodo.23400412).
 
 ## Licence
 

@@ -7,8 +7,13 @@ authors:
     given-names: "Chenrui"
 version: "0.1.0"
 date-released: "2026-10-15"
+doi: "10.5281/zenodo.23400413"
 license: MIT
 repository-code: "https://github.com/sipothemaster/grocery-delivery-availability"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23400412"
+    description: "Concept DOI for all versions"
 abstract: >-
   A reproducible command-line tool for measuring postcode-level grocery
   delivery availability from UK retailer websites, with retailer-specific

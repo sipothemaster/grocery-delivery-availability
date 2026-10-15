@@ -210,32 +210,10 @@ does not guarantee current availability or continued endpoint access. Equally,
 a later access-control block does not retroactively change a valid historical
 response. Dated smoke-test records preserve this distinction.
 
-## Pre-run record
-
-Before generating live traffic, record:
-
-- [ ] research question and why live collection is necessary;
-- [ ] software version or commit and exact retailer adapter;
-- [ ] input source, postcode count, and exclusions;
-- [ ] current terms/robots/institutional review outcome;
-- [ ] expected request chain, delay, session-rotation settings, and duration;
-- [ ] confirmation that no other process is contacting the same retailer;
-- [ ] bounded smoke and soak test results;
-- [ ] stop conditions for 403, 429, 5xx, timeout, mismatch, and schema change;
-- [ ] output location, access controls, retention period, and deletion plan;
-- [ ] monitoring responsibility while the run is active.
-
-## Post-run and release record
-
-After a run or before a software release:
-
-- [ ] report `Yes`, `No`, and `Unknown` counts with the denominator;
-- [ ] review HTTP statuses, error clusters, postcode mismatches, and timings;
-- [ ] document any retailer-interface or classification change;
-- [ ] confirm no collected data, cookies, logs, or identifiers entered Git;
-- [ ] verify that tests and CI remain offline;
-- [ ] review this document against the released implementation;
-- [ ] cite the exact archived software version used for collection.
+Each research run should therefore retain, outside the software repository,
+its purpose, software version, input provenance and exclusions, collection
+parameters, timing, stop conditions, access-control events, result counts,
+retention arrangements, and the identity of the archived software release used.
 
 Responsible collection is therefore a versioned and auditable part of the
 software, not an informal promise made separately from it.

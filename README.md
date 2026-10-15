@@ -67,7 +67,7 @@ grocery-delivery-availability check \
   --input examples/postcodes.csv \
   --postcode-column Postcode \
   --output output/coop.csv \
-  --delay 1.5
+  --delay 2
 ```
 
 For Co-op, the validated workflow can attach to a normal Microsoft Edge

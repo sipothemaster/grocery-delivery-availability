@@ -1,5 +1,7 @@
 # Grocery Delivery Availability
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23400412.svg)](https://doi.org/10.5281/zenodo.23400412)
+
 `grocery-delivery-availability` is a research command-line tool for collecting
 postcode-level grocery delivery coverage from UK retailer websites. It
 supports Amazon Fresh, Co-op, Iceland, Morrisons, Ocado, and Sainsbury's Chop
